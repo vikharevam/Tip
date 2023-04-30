@@ -19,52 +19,44 @@
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="178.09" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1b7-vo-DN5">
                                 <rect key="frame" x="50" y="146" width="293" height="67"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="48"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" enablesReturnKeyAutomatically="YES"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
-                                    <action selector="inputLabel:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="zgO-Hj-dm8"/>
+                                    <action selector="billTextField:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="zgO-Hj-dm8"/>
                                 </connections>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fg1-10-LqR">
                                 <rect key="frame" x="0.0" y="253" width="393" height="599"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AN1-Jf-Wbp">
-                                        <rect key="frame" x="40" y="89" width="313" height="46.333333333333343"/>
+                                        <rect key="frame" x="40" y="89" width="313" height="45"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQP-YS-Tjb">
-                                                <rect key="frame" x="0.0" y="0.0" width="104.33333333333333" height="46.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="43" height="45"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="20%"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="20%">
-                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="27"/>
-                                                </buttonConfiguration>
+                                                <state key="normal" title="0%"/>
                                                 <connections>
-                                                    <action selector="percentageValueButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="za0-SS-iTh"/>
+                                                    <action selector="tipChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1N4-tD-AFk"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3O-cp-tA3">
-                                                <rect key="frame" x="104.33333333333334" y="0.0" width="104.33333333333334" height="46.333333333333336"/>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3O-cp-tA3">
+                                                <rect key="frame" x="43" y="0.0" width="210" height="45"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="10%"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="10%">
-                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="27"/>
-                                                </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="percentageValueButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dRK-XN-JVk"/>
+                                                    <action selector="tipChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YPl-03-QWP"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIW-lb-FSk">
-                                                <rect key="frame" x="208.66666666666666" y="0.0" width="104.33333333333334" height="46.333333333333336"/>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIW-lb-FSk">
+                                                <rect key="frame" x="253" y="0.0" width="60" height="45"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="15%"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="15%">
-                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="27"/>
-                                                </buttonConfiguration>
+                                                <state key="normal" title="20%"/>
                                                 <connections>
-                                                    <action selector="percentageValueButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vcH-wf-PaU"/>
+                                                    <action selector="tipChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vPC-xs-N6W"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -76,7 +68,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="oSA-hH-oe6">
-                                        <rect key="frame" x="40" y="236" width="153" height="43"/>
+                                        <rect key="frame" x="40" y="234.66666666666669" width="153" height="43"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWM-8I-ED3">
                                                 <rect key="frame" x="0.0" y="0.0" width="34" height="43"/>
@@ -85,15 +77,15 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="SM3-ZK-tgx">
-                                                <rect key="frame" x="59" y="5.6666666666666856" width="94" height="32"/>
+                                                <rect key="frame" x="59" y="5.6666666666666288" width="94" height="32"/>
                                                 <connections>
-                                                    <action selector="tipLabelControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="k1v-cp-J5P"/>
+                                                    <action selector="stepperValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="cec-Co-6Ud"/>
                                                 </connections>
                                             </stepper>
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="процент чаевых" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQ6-HE-b9k">
-                                        <rect key="frame" x="20" y="172.33333333333331" width="166" height="26.333333333333343"/>
+                                        <rect key="frame" x="20" y="171" width="166" height="26.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -106,6 +98,10 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Рассчитать"/>
+                                        <connections>
+                                            <action selector="calculatePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8P7-Dh-uCr"/>
+                                            <segue destination="eb6-8I-r8V" kind="presentation" identifier="goToResult" id="7Xh-OZ-yUa"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.84313725490196079" green="0.97647058823529409" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -151,17 +147,103 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="tipLabel" destination="lWM-8I-ED3" id="LCN-Gu-N5I"/>
+                        <outlet property="billTextField" destination="1b7-vo-DN5" id="3UC-VE-Pze"/>
+                        <outlet property="splitNumberLabel" destination="lWM-8I-ED3" id="LCN-Gu-N5I"/>
+                        <outlet property="tenPctButton" destination="S3O-cp-tA3" id="aCs-8l-8ID"/>
+                        <outlet property="twentyPctButton" destination="FIW-lb-FSk" id="G8b-9K-3o5"/>
+                        <outlet property="zeroPctButton" destination="eQP-YS-Tjb" id="yJf-uh-8S0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
         </scene>
+        <!--It Results View Controller-->
+        <scene sceneID="ZJN-7h-H0w">
+            <objects>
+                <viewController id="eb6-8I-r8V" customClass="itResultsViewController" customModule="Tip" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ODa-7h-If7">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E9r-cq-NSL">
+                                <rect key="frame" x="0.0" y="-33.666666666666657" width="393" height="427.66666666666663"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="всего на человека" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yi-FP-2SY">
+                                        <rect key="frame" x="105.33333333333333" y="200.66666666666666" width="182.33333333333337" height="26.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gI3-R3-UvF">
+                                        <rect key="frame" x="50" y="174" width="293" height="310"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="310" id="kFj-ir-Vn1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <color key="textColor" systemColor="systemGreenColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.86711424589999997" green="0.97337085010000002" blue="0.92548531290000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="gI3-R3-UvF" firstAttribute="centerX" secondItem="4yi-FP-2SY" secondAttribute="centerX" id="AWN-62-LvF"/>
+                                    <constraint firstItem="4yi-FP-2SY" firstAttribute="centerY" secondItem="E9r-cq-NSL" secondAttribute="centerY" id="BER-F2-8yv"/>
+                                    <constraint firstItem="4yi-FP-2SY" firstAttribute="centerX" secondItem="E9r-cq-NSL" secondAttribute="centerX" id="Sk1-wH-laT"/>
+                                    <constraint firstAttribute="bottom" secondItem="gI3-R3-UvF" secondAttribute="bottom" constant="-56" id="Ulq-wV-S7s"/>
+                                    <constraint firstItem="gI3-R3-UvF" firstAttribute="leading" secondItem="E9r-cq-NSL" secondAttribute="leading" constant="50" id="dvb-jx-4Gl"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Разделение между 2 людьми, с 10% чаевыми." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rb-DT-5F5">
+                                <rect key="frame" x="20" y="437" width="353" height="52.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ij-w6-5oe">
+                                <rect key="frame" x="131.66666666666666" y="752" width="129.99999999999997" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="aJL-HX-Pkg"/>
+                                    <constraint firstAttribute="height" constant="40" id="ddT-NQ-jmb"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Рассчитать"/>
+                                <connections>
+                                    <action selector="recalculatePressed:" destination="eb6-8I-r8V" eventType="touchUpInside" id="0kx-FP-dFi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ah0-Vc-JcE"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="3rb-DT-5F5" secondAttribute="trailing" constant="20" id="5MJ-2N-eHX"/>
+                            <constraint firstAttribute="bottom" secondItem="9Ij-w6-5oe" secondAttribute="bottom" constant="50" id="DRA-fL-nfb"/>
+                            <constraint firstItem="3rb-DT-5F5" firstAttribute="leading" secondItem="ah0-Vc-JcE" secondAttribute="leading" constant="20" id="M6H-Jv-XY5"/>
+                            <constraint firstItem="ah0-Vc-JcE" firstAttribute="bottom" secondItem="E9r-cq-NSL" secondAttribute="bottom" constant="448" id="O2e-gK-bPb"/>
+                            <constraint firstItem="3rb-DT-5F5" firstAttribute="top" secondItem="E9r-cq-NSL" secondAttribute="bottom" constant="43" id="aSH-ko-7Lv"/>
+                            <constraint firstItem="9Ij-w6-5oe" firstAttribute="centerX" secondItem="ODa-7h-If7" secondAttribute="centerX" id="bzC-cC-V4k"/>
+                            <constraint firstItem="4yi-FP-2SY" firstAttribute="centerX" secondItem="ODa-7h-If7" secondAttribute="centerX" id="eqz-91-lu3"/>
+                            <constraint firstItem="ah0-Vc-JcE" firstAttribute="trailing" secondItem="E9r-cq-NSL" secondAttribute="trailing" id="fau-11-Cyk"/>
+                            <constraint firstItem="E9r-cq-NSL" firstAttribute="leading" secondItem="ah0-Vc-JcE" secondAttribute="leading" id="fw8-rf-uLk"/>
+                            <constraint firstItem="4yi-FP-2SY" firstAttribute="centerY" secondItem="ODa-7h-If7" secondAttribute="centerY" constant="-240.83333333333331" id="y2e-LH-iZm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="billLabel" destination="gI3-R3-UvF" id="cbo-ky-SpV"/>
+                        <outlet property="settingsLabel" destination="3rb-DT-5F5" id="hd7-qW-5Jo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sy5-3t-TWh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="765.64885496183206" y="-6.3380281690140849"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
